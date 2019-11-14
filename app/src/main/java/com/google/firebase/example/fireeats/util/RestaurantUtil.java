@@ -88,7 +88,7 @@ public class RestaurantUtil {
         restaurant.setPrice(getRandomInt(prices, random));
         restaurant.setAvgRating(getRandomRating(random));
         restaurant.setNumRatings(random.nextInt(20));
-
+        restaurant.setContact(restaurant.getName() + "@hmail.com");
         return restaurant;
     }
 

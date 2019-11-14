@@ -28,11 +28,13 @@ public class Restaurant {
     public static final String FIELD_PRICE = "price";
     public static final String FIELD_POPULARITY = "numRatings";
     public static final String FIELD_AVG_RATING = "avgRating";
+    public static final String FIELD_CONTACT = "contact";
 
     private String name;
     private String city;
     private String category;
     private String photo;
+    private String contact;
     private int price;
     private int numRatings;
     private double avgRating;
@@ -47,6 +49,18 @@ public class Restaurant {
         this.price = price;
         this.numRatings = numRatings;
         this.avgRating = avgRating;
+        this.contact = null;
+    }
+
+    public Restaurant(String name, String city, String category, String photo,
+                      int price, int numRatings, double avgRating, String contact) {
+        this.name = name;
+        this.city = city;
+        this.category = category;
+        this.price = price;
+        this.numRatings = numRatings;
+        this.avgRating = avgRating;
+        this.contact = contact;
     }
 
     public String getName() {
@@ -103,5 +117,13 @@ public class Restaurant {
 
     public void setAvgRating(double avgRating) {
         this.avgRating = avgRating;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact){
+        this.contact = contact;
     }
 }
