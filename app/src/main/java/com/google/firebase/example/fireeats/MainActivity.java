@@ -170,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void onAddItemsClicked() {
+        /** Only do this once to generate initial restaurants
         // Get a reference to the restaurants collection
         CollectionReference restaurants = mFirestore.collection("restaurants");
 
@@ -180,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements
             // Add a new document to the restaurants collection
             restaurants.add(restaurant);
         }
+         **/
     }
 
     @Override

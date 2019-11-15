@@ -73,6 +73,7 @@ public class RestaurantAdapter extends FirestoreAdapter<RestaurantAdapter.ViewHo
         TextView priceView;
         TextView categoryView;
         TextView cityView;
+        TextView contactView;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -83,6 +84,7 @@ public class RestaurantAdapter extends FirestoreAdapter<RestaurantAdapter.ViewHo
             priceView = itemView.findViewById(R.id.restaurant_item_price);
             categoryView = itemView.findViewById(R.id.restaurant_item_category);
             cityView = itemView.findViewById(R.id.restaurant_item_city);
+            contactView = itemView.findViewById(R.id.contact_info);
         }
 
         public void bind(final DocumentSnapshot snapshot,
@@ -103,6 +105,7 @@ public class RestaurantAdapter extends FirestoreAdapter<RestaurantAdapter.ViewHo
             numRatingsView.setText(resources.getString(R.string.fmt_num_ratings,
                     restaurant.getNumRatings()));
             priceView.setText(RestaurantUtil.getPriceString(restaurant));
+            contactView.setText(restaurant.getContact());
 
             // Click listener
             itemView.setOnClickListener(new View.OnClickListener() {

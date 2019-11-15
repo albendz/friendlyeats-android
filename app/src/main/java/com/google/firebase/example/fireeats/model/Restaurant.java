@@ -124,6 +124,6 @@ public class Restaurant {
     }
 
     public void setContact(String contact){
-        this.contact = contact;
+        this.contact = contact.replace(' ', '_');
     }
 }

@@ -21,9 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/restaurant_item_image"
-        android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="-2dp"
+        android:layout_marginBottom="4dp"
         android:layout_toLeftOf="@+id/restaurant_item_price"
         android:layout_toRightOf="@+id/restaurant_item_image"
         android:ellipsize="end"
@@ -87,5 +87,17 @@
         android:layout_alignParentRight="true"
         android:textColor="@color/greySecondary"
         tools:text="$$$" />
+
+    <TextView
+        android:id="@+id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/restaurant_item_name"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="-44dp"
+        android:layout_toEndOf="@+id/restaurant_item_city"
+        android:layout_toRightOf="@+id/restaurant_item_city"
+        android:text="food@restaurants.com" />
 
 </RelativeLayout>

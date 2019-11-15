@@ -68,6 +68,7 @@ public class RestaurantDetailActivity extends AppCompatActivity implements
     private TextView mPriceView;
     private ViewGroup mEmptyView;
     private RecyclerView mRatingsRecycler;
+    private TextView mContactView;
 
     private RatingDialogFragment mRatingDialog;
 
@@ -91,6 +92,7 @@ public class RestaurantDetailActivity extends AppCompatActivity implements
         mPriceView = findViewById(R.id.restaurant_price);
         mEmptyView = findViewById(R.id.view_empty_ratings);
         mRatingsRecycler = findViewById(R.id.recycler_ratings);
+        mContactView = findViewById(R.id.restaurant_contact);
 
         findViewById(R.id.restaurant_button_back).setOnClickListener(this);
         findViewById(R.id.fab_show_rating_dialog).setOnClickListener(this);
@@ -222,6 +224,7 @@ public class RestaurantDetailActivity extends AppCompatActivity implements
         mCityView.setText(restaurant.getCity());
         mCategoryView.setText(restaurant.getCategory());
         mPriceView.setText(RestaurantUtil.getPriceString(restaurant));
+        mContactView.setText(restaurant.getContact());
 
         // Background image
         Glide.with(mImageView.getContext())

@@ -21,12 +21,12 @@
             android:scaleType="centerCrop"
             tools:src="@drawable/food_1" />
 
+        <!-- Back button -->
         <View
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@drawable/gradient_up" />
 
-        <!-- Back button -->
         <ImageView
             android:id="@+id/restaurant_button_back"
             android:layout_width="wrap_content"
@@ -114,6 +114,19 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:text="$$$" />
+
+        <TextView
+            android:id="@+id/restaurant_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/restaurant_num_ratings"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/restaurant_num_ratings"
+            android:layout_toRightOf="@+id/restaurant_num_ratings"
+            android:text="contact@contact.com"
+            android:textColor="@android:color/white" />
 
     </RelativeLayout>
 
